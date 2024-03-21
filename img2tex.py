@@ -30,18 +30,18 @@ def read_screenshot():
             from pix2text import Pix2Text, merge_line_texts
             # img_fp = './en1.jpg'
             
-            # p2t = Pix2Text()
-            # outs = p2t.recognize_text(image)
-            # print(outs)
+            # p2t = Pix2Text()                                          #
+            # outs = p2t.recognize_text(image)                       #          text only
+            # print(outs)                                               #
             
-            p2t = Pix2Text()
-            outs = p2t.recognize(image, resized_shape=608, return_text=True)  # You can also use `p2t(img_fp)` to get the same result
-            print(outs)
+            p2t = Pix2Text()                                                                                                                    #
+            outs = p2t.recognize(image, resized_shape=608, return_text=True)  # You can also use `p2t(img_fp)` to get the same result            #        multi line code
+            print(outs)                                                                                                                           #  
             return outs
         
             # p2t = Pix2Text()
             # equations = p2t.recognize_formula(image)
-            # processed_equations = process_equations(equations)
+            # processed_equations = process_equations(equations)           #OLD CODE
             # print(processed_equations)
             # return processed_equations
             
